@@ -1,0 +1,237 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	text-decoration: none;
+}
+
+/*estilo del header*/
+.gridheader{
+	width: 72vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(12, 5vw);
+	grid-template-rows: auto auto;
+	gap: 1vw;
+}
+.logo{
+	grid-area: 1 / 1 / span 1 / span 3;
+	padding: 1vw;
+}
+.nav{
+	grid-area: 2 / 7/ span 1 / span 6;
+	font-size: 1.3vw;
+	padding: 1vw 0;
+}
+.nav a {
+	padding: 1vw 0.5vw;
+	font-weight: bolder;
+}
+.nav a:link {color: #5A5A5A;}
+.nav a:visited {color: #5A5A5A;} 
+.nav a:hover {color: #8BD3D9;} 
+.nav a:active {color: #CF97FF;}
+
+.line{
+	border-bottom: 1vw solid #CF97FF;
+	width: 72vw; 
+	margin: auto; 
+}
+
+/*estilo del foother*/
+footer{
+	background-color: #B688DD;
+}
+.gridfooter{
+	width: 72vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(12, 5vw);
+	gap: 1vw;
+	padding: 5vw 0 5vw ;
+	text-align: center;
+	color:#FFFFFF;
+	line-height: 1.5;
+}
+.footright{
+	grid-column: 1/4;
+}
+.footcenter{
+	grid-column: 5/9; 
+}
+.footleft{
+	grid-column: 10/13;
+}
+.gridfooter h4{
+	font-size: 1.4vw;
+	padding: 1vw;
+}
+.footright > a:link {color: #FFFFFF;} 
+.footright > a:visited {color: #FFFFFF;} 
+.footright > a:hover {color: #FFEA9B;} 
+.footright > a:active {color: #8BD3D9;}
+
+/*gradiente*/
+.animar{
+	position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.animar img{
+	width: 100%;
+}
+.animar h1 {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%); 
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 4vw;
+    font-weight: bolder;
+    border-radius: 25px;
+    padding: 1vw;
+    background: linear-gradient(-45deg, #FFEA9B, #CF97FF, #8BD3D9);
+    background-size: 400% 400%;
+    animation:  gradient 15s ease infinite;
+    box-shadow: 0px 0px 20px 1px #0004;
+}
+
+@keyframes gradient{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.text{
+	width: 60vw; 
+	text-align: center;
+	margin: 5vw auto;
+	line-height: 1.5;
+}
+.text h2{
+	padding: 2vw;
+}
+
+/*estilo del main index*/
+.introflex{
+	display: flex;
+	gap: 1vw;
+	place-content: center;
+	padding: 5vw 0;
+	text-align: center;
+
+}
+.introflex img{
+	width: 23vw;
+	margin: 1vw;
+}
+.boton:link, .boton:visited{
+	color: #5A5A5A;
+	border: 1px solid #5A5A5A;
+  	padding: 0.5vw;
+  	text-align: center;
+	border-radius: 15px;
+	margin: 1vw; 
+} 
+.boton:hover {color: #8BD3D9;
+} 
+.boton:active {color: #CF97FF;}
+
+/*formulario*/
+.form{
+	margin: 5vw auto;
+	text-align: center;
+}
+.camp{
+  width: 60vw;
+  padding: 12px 20px;
+  margin: 1vw 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 60vw;
+  background-color: #78BABF;
+  color: white;
+  font-weight: bold;
+  padding: 1vw 2vw;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #8BD3D9;
+}
+
+textarea{
+	resize: vertical;
+} 
+
+/*productos*/
+.color img{
+	width: 12vw;
+	margin: 1vw;
+}
+
+.producflex{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1vw;
+	place-content: center;
+	padding: 2vw 12vw;
+	text-align: center;	
+	margin: 3vw 14vw;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+.soft, .cold, .warm{
+		position: relative;
+    text-align: center;
+}
+.banner img{
+	width: 100%;
+}
+.banner h1 {
+    color: #FFFFFF;
+    font-size: 4vw;
+    font-weight: bolder;
+    border-radius: 25px;
+    padding: 1vw;
+    background: linear-gradient(-45deg, #FFEA9B, #CF97FF, #8BD3D9);
+    background-size: 400% 400%;
+    animation:  gradient 15s ease infinite;
+    box-shadow: 0px 0px 20px 1px #0004;
+}
+.txtbanner1{
+	  position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%); 
+    text-align: left;
+}
+.txtbanner2{	  
+		position: absolute;
+    top: 50%;
+    left: 34%;
+    transform: translate(-50%, -50%); 
+    text-align: left;
+  }
+.txtbanner3{	  
+		position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%); 
+    text-align: left;
+  }

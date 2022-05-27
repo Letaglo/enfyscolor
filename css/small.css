@@ -1,0 +1,93 @@
+@media only screen and (min-width: 0px)  and (max-width: 768px)
+{	
+	.gridheader{
+		width: 100vw;
+		grid-template-columns: 100vw;
+		grid-template-areas: "logo"
+							 "nav";
+		text-align: center;
+	}
+	.logo{
+		grid-area: logo;
+		padding: 1vw;
+		width: 50vw;
+		margin: auto 20vw 2vw 30vw;
+	}
+	.nav{
+   	grid-area: nav; 
+   	margin: 2vw; 
+   	
+	}
+   	.nav a{
+   	display:block; 
+   	font-size: 4vw;
+   	}
+   	.animar img{
+	width: 100vw;
+	height: 50vw
+	}
+   	.animar h1{	
+    left: 40%;
+    font-size: 7vw;
+	}
+
+	.introflex{
+		flex-direction: column;
+	}
+	.introflex img{
+		width: 50vw;
+	}
+	.introflex section{
+		margin: 5vw;
+	}
+
+
+	.gridfooter{
+		width: 100vw; 
+		grid-template-columns: 100vw; 
+		grid-template-areas: 	"footright"
+								"footcenter"
+								"footleft";
+		text-align: center;
+	}
+	.footright{
+		grid-area: footright; 
+		padding: 1vw;
+	}
+	.footcenter{
+		grid-area: footcenter; 
+		padding: 1vw; 
+	}
+	.footleft{
+		grid-area: footleft;
+		padding: 1vw;
+	}
+	.gridfooter h4{
+		font-size: 4vw;
+		padding: 1vw; 
+	}
+	/*presentacion*/
+	.center{
+		width: 100%;
+	}
+	/*formulario*/
+	.camp{
+		width: 60vw;
+	}
+	input[type=submit] {
+	 width: 60vw;
+	 height: 4vh;
+	}
+	.text iframe{
+		width: 60vw;
+	}
+
+	/*productos*/
+	.producflex{
+		padding: 2vw;
+		margin: 3vw;
+	}
+	.color img{
+		width: 20vw;
+	}
+}

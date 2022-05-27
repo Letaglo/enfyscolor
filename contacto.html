@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/estilos.css">
+		<link rel="stylesheet" media="(max-width: 768px)" href=./css/small.css>
+		<link rel="stylesheet" media="(max-width: 1200px)" href=./css/medium.css>
+		<link rel="icon" href="./img/favicon.png">
+		<title>Enfys Color</title>
+		<script src="https://kit.fontawesome.com/3a6a7a1eda.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?	family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+	</head>
+	
+	<body >
+		<header id="header"></header>
+		
+		<main>
+			<div class="line"></div>
+
+			<div class="contact">
+				<div class="text">
+					<h2>¿EN QUÉ TE PODEMOS AYUDAR?</h2>
+					<p>¡Qué bueno que quieras contactarte con nosotros! Contanos lo qué necesitás para que podamos ayudarte. 
+					Completá el formulario y en breve nos pondremos en contacto con vos.</p>
+	
+				<form class="form" action="./show_data.html" target="_blank" onsubmit="return validateForm()">
+				    <label for="txtnombre"></label>
+				    <input class="camp" type="text" id="txtnombre" placeholder="NOMBRE" maxlength="15" name="Nombre">
+				    <label for="txtapellido"></label>
+				    <input class="camp" type="text" id="txtapellido" placeholder="APELLIDO" maxlength="15" name="Apellido">
+				    <label for="mail"></label>
+				    <input class="camp" type="email" id="mail" placeholder="E-MAIL" maxlength="15" name="E-mail">
+				    <label for="telefono"></label>
+				    <input class="camp" type="tel" id="telefono" placeholder="TELEFONO" maxlength="15" name="Telefono">
+				    <label for="localidad"></label>
+				    <input class="camp" type="text" id="localidad" placeholder="LOCALIDAD / CIUDAD" maxlength="15" name="LocalidadCiudad">
+				    <label for="comentarios"></label>
+				    <textarea class="camp" id="comentarios" rows="10" cols="30" placeholder="MENSAJE" maxlength="200" name="Mensaje"></textarea>
+				    <input type="submit" value="Enviar">
+				</form>
+			</div>
+
+			<div class="text">
+				<h2>ENCONTRANOS</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7171.5122855483!2d-67.99988888867283!3d-
+				38.933056070287876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1653531059319!5m2!1ses!2sar"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</main>
+
+		<footer id="footer"></footer>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html> 
